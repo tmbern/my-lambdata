@@ -7,6 +7,17 @@ def enlarge(n):
     """
     return n * 100
 
-x = int(input("Please choose a number: "))
-result = enlarge(x)
-print(result)
+# # if in global scope this will mess up 
+# # our ability to import other functions
+# # from this file
+# # need to nest it under the main
+# x = int(input("Please choose a number: "))
+# result = enlarge(x)
+# print(result)
+
+if __name__ == "__main__":
+
+   
+    x = int(input("Please choose a number: "))
+    result = enlarge(x)
+    print(result)
